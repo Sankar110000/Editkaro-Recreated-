@@ -1,0 +1,161 @@
+*{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+.navbar{
+    height: 4rem;
+    padding-left: 2rem;
+    letter-spacing: 5%;
+    position: fixed;
+    right: 0%;
+    left: 0%;
+    z-index: 1; 
+    transition: 1s;
+}
+
+body{
+    background-color:  #E9E6DD;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.intro{
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.chip{
+    width: 40%;
+    background-color: rgb(221, 255, 0);
+    margin-left: 30%;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    border-radius: 15px;
+}
+
+.startBtn{
+    background-color: black;
+    color: white;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 25px;
+    font-weight: 100;
+    margin-top: 5rem;
+    border: none;
+    transition: 1s;
+}
+
+.startBtn:hover{
+    background-color: #E9E6DD;
+    color: black;
+    border: 1px solid black;
+}
+
+.carousal{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    animation: scroll-left 25s linear infinite;
+}
+
+.carousal img {
+    border-radius: 2rem;
+    height: 20rem;
+    width: 25rem;
+}
+
+
+.imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5rem;
+}
+
+@keyframes scroll-left {
+    0%{
+        transform: translateX(0%);  
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 550px){
+    .imgContainer{
+        margin: 0px;
+    }
+}
+
+
+.containerImg{
+    height: 15rem;
+    width: 25rem;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
+
+
+.containerImg:hover{
+    box-shadow: 2px 5px 10px black;
+}
+
+footer{
+    height: 10rem;
+    background-color:  #C4AD9D;
+    text-align: center;
+    align-items: center;
+}
+
+
+.nav-pills{
+    position: absolute;
+    right: 20px;
+}
+
+.nav-link{
+    color: black !important;
+    transition: 1s;
+}
+
+.nav-link:hover{
+    text-shadow: 1px 1px 1px black;
+}
+
+.card p{
+    position: absolute;
+    left: 1rem;
+    top: 13rem;
+    color: aliceblue;
+    font-weight: 100;
+    transition: 1s;
+    visibility: visible;
+}
+
+
+p i{
+    cursor: pointer;
+}
+
+#facilitesBtn{
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: 1s;
+}
+
+#facilitesBtn:hover{
+    border: none;
+    color: antiquewhite !important;
+    background-color: black;
+    text-shadow: none;
+}
