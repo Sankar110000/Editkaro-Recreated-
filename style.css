@@ -40,12 +40,13 @@ body{
 .startBtn{
     background-color: black;
     color: white;
-    width: 7rem;
     height: 3rem;
+    padding: 0.7rem;
+    text-decoration: none;
     border-radius: 25px;
     font-weight: 100;
     margin-top: 5rem;
-    border: none;
+    border: 1px solid black;
     transition: 1s;
 }
 
@@ -115,14 +116,18 @@ body{
 
 
 .containerImg{
-    height: 15rem;
+    height: 100%;
     width: 25rem;
     transition: 1s;
     border-radius: 10px;
 }
 
-.card{
+.imgCard{
+    height: 15rem;
+    border-radius: 15px;
     margin-bottom: 2rem;
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
+    text-align: center;
 }
 
 
@@ -152,14 +157,11 @@ footer{
     text-shadow: 1px 1px 1px black;
 }
 
-.card p{
-    position: absolute;
-    left: 1rem;
-    top: 13rem;
+.imgCard p{
+    position: relative;
+    top: -13%;
     color: aliceblue;
     font-weight: 100;
-    transition: 1s;
-    visibility: visible;
 }
 
 
