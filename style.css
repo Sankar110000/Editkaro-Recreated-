@@ -91,6 +91,26 @@ body{
     .imgContainer{
         margin: 0px;
     }
+    .intro h3{
+        font-size: 3rem !important;
+    }
+    .carousal img{
+        height: 10rem;
+        width: 15rem;
+        border-radius: 5px;
+    }
+    .carousal{
+        gap: 1rem;
+    }
+    .container-fluid{
+        margin-left: 25x;
+    }
+
+    .startBtn{
+        width: 5rem;
+        height: 2rem;
+        font-size: 12px;
+    }
 }
 
 
