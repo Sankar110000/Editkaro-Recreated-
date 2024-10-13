@@ -114,13 +114,13 @@ body{
         font-size: 12px;
         padding: 0.4rem;
     }
-    .videoContainer{
-        position: relative;
-        left: -18%;
-    }
     .contactUs input,textarea{
-        width: 80% !important;
-        margin-left: 10%;
+        width: 10rem !important;
+        margin: auto !important;
+    }
+
+    footer{
+        font-size: 0.7rem;
     }
 
 }
@@ -201,8 +201,8 @@ p i{
 .videoContainer{
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem 5rem 0 5rem;
     justify-content: space-evenly;
+    gap: 1.5rem;
     margin-top: 5rem;
 }
 
@@ -221,4 +221,15 @@ p i{
     position: relative;
     top: -3rem;
     font-size: 1.2rem;
+}
+
+.contactUs input,textarea{
+    width: 60% !important;
+    margin: auto;
+}
+
+.contactUs button{
+    position: relative;
+    right: -25%;
+    margin-bottom: 1.5rem;
 }

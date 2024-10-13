@@ -2,6 +2,7 @@ let lastScrollPostion = 0;
 let navbar = document.querySelector(".navbar");
 let vdoPreviews = document.querySelectorAll(".videoContainer video");
 let scrollHeading2 = document.querySelector("#scrollHeading2");
+let submitBtn = document.querySelector(".contactUs button");
 
 window.addEventListener("scroll", () => {
     let currScrollPosition = window.scrollY;
@@ -32,4 +33,10 @@ scrollHeading2.addEventListener("click", () => {
         left: 0,
         behavior: "smooth"
     })
-})
+});
+
+submitBtn.addEventListener("click", () => {
+    let email = document.querySelector("#exampleFormControlInput1").value;
+    let message = document.querySelector("#exampleFormControlTextarea1").value;
+    console.log(`Message recieved from email ${email}, Message - ${message}`);
+});
